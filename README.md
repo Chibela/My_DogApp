@@ -50,9 +50,9 @@ The following **required** functionality is completed:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
+Here's a walkthrough of implemented features:
 
-<img src='https://raw.githubusercontent.com//Chibela/FlashcardsApp_web102/main/public/walkthrough4.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://raw.githubusercontent.com/Chibela/My_DogApp/main/public/walkthrough4.gif' title='DogFetch Video Walkthrough' alt='DogFetch Video Walkthrough' />
 
 GIF created with ScreenToGif
 
