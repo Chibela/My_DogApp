@@ -1,0 +1,160 @@
+html, body {
+  background: url("https://images.unsplash.com/photo-1560807707-8cc77767d783") 
+              center center / cover no-repeat fixed;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  min-height: 100vh;
+  color: white;
+  gap: 20px;
+  padding: 20px;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+
+/* Scrollable sidebars */
+.sidebar {
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 16px;
+  padding: 15px;
+  overflow-y: auto;
+  max-height: 90vh;
+  backdrop-filter: blur(8px);
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #ffb400;
+}
+/* Scrollable sidebars */
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main-card {
+  width: 100%;
+  max-width: 700px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.title {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #ccc;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.discover-btn {
+  background: #ffb400;
+  color: black;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 22px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.discover-btn:hover {
+  background: #ffd75e;
+}
+
+.error-msg {
+  color: #ff6b6b;
+  margin-top: 8px;
+  font-size: 0.9rem;
+}
+
+.main-card,
+.sidebar {
+  position: relative;
+  z-index: 2;
+}
+
+.dog-card {
+  margin-top: 20px;
+}
+
+.dog-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.dog-info {
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+.dog-info span {
+  color: #ffb400;
+  cursor: pointer;
+}
+
+.dog-info span:hover {
+  text-decoration: underline;
+}
+
+.sidebar-item {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 6px 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.sidebar-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 5px auto;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sidebar-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 180, 0, 0.6);
+}
+
+.sidebar-item p {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #ddd;
+}
+
+@media (max-width: 950px) {
+  .app-container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+}
